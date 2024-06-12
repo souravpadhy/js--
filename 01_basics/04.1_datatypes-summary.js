@@ -1,4 +1,4 @@
-//  Primitive
+//  Primitive - call by value - changes in copy
 
 //  7 types : String, Number, Boolearn, null, undefined, Symbol, BigInt
 
@@ -16,11 +16,11 @@ console.log(id === anotherId);
 
 // const bigNumber = 3456543576654356754n
 
+// java is a dynamic type language
 
+// Reference (Non primitive)-call by reference
 
-// Reference (Non primitive)
-
-// Array, Objects, Functions
+// Array, Objects, Functions  
 
 const heros = ["shaktiman", "naagraj", "doga"];
 let myObj = {
@@ -35,3 +35,30 @@ const myFunction = function(){
 console.log(typeof anotherId);
 
 // https://262.ecma-international.org/5.1/#sec-11.4.3
+
+
+  
+
+
+// stack(primitive) and heap(non-primitive)
+
+let myYoutubename = "souravdotcom"
+
+let anothername  = myYoutubename
+
+anothername = "vijaydotcom"
+
+console.log(myYoutubename);
+console.log(anothername);
+
+let userone = {
+    email: "@google.com",
+    upi: " usear@ybl"
+}
+
+let usertwo = userone
+
+usertwo.email = "dhoni@google.com "
+
+console.log(userone.email);
+console.log(usertwo.email);
